@@ -1,4 +1,4 @@
-<div style="width:102px;min-height:118px;" class="cmd #history# tooltips cmd-widget cursor container-fluid  " data-type="info" data-subtype="numeric" data-cmd_id="#id#" data-cmd_uid="#uid#" data-version="#version#" data-eqLogic_id="#eqLogic_id#" data-eqLogic_id="#eqLogic_id#">
+<div style="width:102px;min-height:118px;" class="cmd #history# tooltips cmd-widget cursor container-fluid " data-type="info" data-subtype="numeric" data-cmd_id="#id#" data-cmd_uid="#uid#" data-version="#version#" data-eqLogic_id="#eqLogic_id#" data-eqLogic_id="#eqLogic_id#">
     <!-- Info Widget
         Basé sur les widget de 		: jpoilux
         Mise à jour	: JAG 20190512  : Nettoyage du code
@@ -6,7 +6,7 @@
     <div class="row" style="width:100px">
         <center>
             <div class="title #hide_name#">
-                <div class="cmdName">#name_display#</div>
+                <div class="cmdName" style="#hideCmdName#">#name_display#</div>
             </div>
             <div class="iconCmd#id# batterie"></div>
             <div class="state_background#id# batterie" style="height:20px">
@@ -27,7 +27,7 @@
                     var srcImgWidth		   = (is_numeric('#sizew#')) ? parseFloat('#sizew#') : 30;
             // Paramétrage Niveau
                     var level_0 		   = (is_numeric('#level_0#'))  ? parseFloat('#level_0#') : 0;
-                    var level_20 		   = (is_numeric('#level_20#')) ? parseFloat('#level_20#') : 20.0;	
+                    var level_20 		   = (is_numeric('#level_20#')) ? parseFloat('#level_20#') : 20.0;
                     var level_40  		   = (is_numeric('#level_40#')) ? parseFloat('#level_40#') : 40.0;
                     var level_60 		   = (is_numeric('#level_60#')) ? parseFloat('#level_60#') : 60.0;
                     var level_80 		   = (is_numeric('#level_80#')) ? parseFloat('#level_80#') : 80.0;
