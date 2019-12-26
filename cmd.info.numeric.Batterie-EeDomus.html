@@ -1,7 +1,7 @@
 <div style="width:102px;min-height:118px;" class="cmd #history# tooltips cmd-widget cursor container-fluid " data-type="info" data-subtype="numeric" data-cmd_id="#id#" data-cmd_uid="#uid#" data-version="#version#" data-eqLogic_id="#eqLogic_id#" data-eqLogic_id="#eqLogic_id#">
     <!-- Info Widget
         Basé sur les widget de 		: jpoilux
-        Mise à jour	                : JAG 20190918 Migration des images
+        Mise à jour	                : JAG 20191226 Correction Bug images
     -->
     <div class="row" style="width:100px">
         <center>
@@ -63,7 +63,7 @@
                 $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image","url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_60.png')");
             } else if (State > level_60 && State <=level_80){
                 srcPictureID = "80";
-                $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image","url(data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_80.png')");
+                $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image","url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_80.png')");
             } else if (State > level_80 && State <=level_100){
                 srcPictureID = "100";
                 $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image","url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_100.png')");
