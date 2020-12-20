@@ -2,7 +2,7 @@
     <!-- Info Widget
         Widget de           : JAG
         Widget pour le Core : V4
-        Mise à jour         : JAG 20200502 => Ajout Version Core
+        Mise à jour         : JAG 20201220 => Update suite changement localisation image
 	-->
     <div class="row" style="width:100px">
         <center>
@@ -35,8 +35,8 @@
         var level_80 = (is_numeric('#level_80#')) ? parseFloat('#level_80#') : 80.0;
         var level_100 = (is_numeric('#level_100#')) ? parseFloat('#level_100#') : 100.0;
         // Paramétrage des images
-        var srcImgURL = 'data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/';
-        var srcImgURL_ER = 'data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/error/';
+        var srcImgURL = 'data/img/batterie/';
+        var srcImgURL_ER = 'data/img/error/';
         // Paramètrage du logo
         var srcImglogo = ('#logo#' != '#' + 'logo#') ? "#logo#" : "ba_battery2_";
         var srcImglogo_T = ('#logo_type#' != '#' + 'logo_type#') ? "#logo_type#" : "png";
@@ -52,25 +52,25 @@
         var State = parseFloat(_options.display_value);
         if (State == level_0) {
             srcPictureID = "20";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_0.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_0.png')");
         } else if (State > level_0 && State <= level_20) {
             srcPictureID = "20";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_20.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_20.png')");
         } else if (State > level_20 && State <= level_40) {
             srcPictureID = "40";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_40.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_40.png')");
         } else if (State > level_40 && State <= level_60) {
             srcPictureID = "60";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_60.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_60.png')");
         } else if (State > level_60 && State <= level_80) {
             srcPictureID = "80";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_80.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_80.png')");
         } else if (State > level_80 && State <= level_100) {
             srcPictureID = "100";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_100.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_100.png')");
         } else {
             srcPictureID = "error";
-            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/customTemplates/dashboard/cmd.action.other.Multi-action-Defaut/batterie/ba_bottom_0.png')");
+            $('.cmd[data-cmd_uid=#uid#] .state_background#id#').css("background-image", "url('data/img/batterie/ba_bottom_0.png')");
             srcImgURL = srcImgURL_ER;
         }
 
